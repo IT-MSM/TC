@@ -115,7 +115,7 @@
     const wa = document.getElementById('whatsapp-link');
     if (wa) {
       const number = egyptInternational(settings.whatsapp);
-      const message = 'السلام عليكم، عايز أبعت ملف رسالة علمية للطباعة.';
+      const message = 'السلام عليكم، عايز أبعت ملف للطباعة.';
       wa.href = 'https://wa.me/' + number + '?text=' + encodeURIComponent(message);
     }
     const telegram = document.getElementById('telegram-link');
