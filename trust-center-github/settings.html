@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#142d3b">
+  <meta name="robots" content="noindex,nofollow">
+  <title>إعدادات Trust Center</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Tajawal:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="settings-page">
+  <main class="settings-main">
+    <div class="settings-top">
+      <a class="brand" href="index.html"><span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7.5C9.5 5.8 6 5.4 3 6.3v12.2c3.2-1.1 6.4-.5 9 1.2 2.6-1.7 5.8-2.3 9-1.2V6.3c-3-.9-6.5-.5-9 1.2Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 7.5v12.2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span><span class="brand-name"><strong>TRUST</strong><small>CENTER · MANSOURA</small></span></a>
+      <a class="settings-back" href="index.html">← رجوع للموقع</a>
+    </div>
+    <header class="settings-heading"><p class="section-kicker">إدارة بيانات الموقع</p><h1>الإعدادات</h1><p>غيّر الأرقام أو بيانات الشبكة من هنا. التغييرات دي بتتحفظ على المتصفح والجهاز ده بس.</p></header>
+
+    <section class="lock-card" id="settings-lock" aria-labelledby="lock-title">
+      <span class="lock-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"/></svg></span>
+      <h2 id="lock-title">صفحة الإعدادات مخفية</h2>
+      <p>اكتب رمز الدخول عشان تفتح حقول التعديل.</p>
+      <form id="settings-unlock-form">
+        <label class="form-label" for="settings-passcode">رمز الدخول
+          <input class="form-control" id="settings-passcode" name="passcode" type="password" inputmode="numeric" autocomplete="current-password" maxlength="4" pattern="[0-9]{4}" placeholder="أربع أصفار" required autofocus>
+        </label>
+        <button class="button button-primary" type="submit">فتح الإعدادات</button>
+        <p class="form-error" id="unlock-error" role="alert"></p>
+      </form>
+    </section>
+
+    <form class="settings-panel" id="settings-panel" hidden>
+      <h2>التواصل وإرسال الملفات</h2>
+      <div class="settings-grid">
+        <label class="form-label">رقم واتساب
+          <input class="form-control" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" required>
+        </label>
+        <label class="form-label">رقم تليجرام
+          <input class="form-control" name="telegram" type="tel" inputmode="tel" autocomplete="tel" required>
+        </label>
+        <label class="form-label full-width">رابط فيسبوك
+          <input class="form-control" name="facebookUrl" type="url" inputmode="url" placeholder="https://www.facebook.com/...">
+        </label>
+      </div>
+
+      <h2>الدفع — الفترة الصباحية</h2>
+      <div class="settings-grid">
+        <label class="form-label">رقم Vodafone Cash صباحًا
+          <input class="form-control" name="morningCash" type="tel" inputmode="tel" required>
+        </label>
+        <label class="form-label">رقم InstaPay صباحًا
+          <input class="form-control" name="morningInstapay" type="tel" inputmode="tel" required>
+        </label>
+        <label class="form-label full-width">رابط دفع InstaPay مباشر صباحًا (اختياري)
+          <input class="form-control" name="morningInstapayLink" type="url" inputmode="url" placeholder="https://ipn.eg/S/...">
+        </label>
+      </div>
+
+      <h2>الدفع — الفترة المسائية</h2>
+      <div class="settings-grid">
+        <label class="form-label">رقم Vodafone Cash مساءً
+          <input class="form-control" name="eveningCash" type="tel" inputmode="tel" required>
+        </label>
+        <label class="form-label">رقم InstaPay مساءً
+          <input class="form-control" name="eveningInstapay" type="tel" inputmode="tel" required>
+        </label>
+        <label class="form-label full-width">رابط دفع InstaPay مباشر مساءً (اختياري)
+          <input class="form-control" name="eveningInstapayLink" type="url" inputmode="url" placeholder="https://ipn.eg/S/...">
+        </label>
+      </div>
+
+      <h2>العنوان والخريطة</h2>
+      <div class="settings-grid">
+        <label class="form-label full-width">العنوان الظاهر على الموقع
+          <input class="form-control" name="address" type="text" required>
+        </label>
+        <label class="form-label full-width">كلمات البحث للخريطة
+          <input class="form-control" name="mapQuery" type="text" required>
+        </label>
+      </div>
+
+      <h2>شبكة Wi-Fi</h2>
+      <div class="settings-grid">
+        <label class="form-label">اسم الشبكة
+          <input class="form-control" name="wifiSSID" type="text" autocomplete="off" required>
+        </label>
+        <label class="form-label">كلمة مرور الشبكة
+          <input class="form-control" name="wifiPassword" type="password" autocomplete="new-password" required>
+        </label>
+      </div>
+
+      <button class="button button-primary" type="submit">حفظ الإعدادات على هذا الجهاز</button>
+      <p class="settings-status" id="settings-status" role="status" aria-live="polite"></p>
+      <p class="settings-notice">الموقع ثابت لرفعه على GitHub: حفظ الأرقام هنا يغيّرها في المتصفح الحالي فقط، ومش بيغيّر ملفات GitHub ولا أجهزة الزوار. عشان التغيير يظهر لكل الناس عدّل القيم في ملف <b>app.js</b> وارفع الموقع من جديد. رمز 0000 واجهة دخول بسيطة مش حماية حقيقية؛ أي حد يقدر يقرأ بيانات الموقع من الملفات.</p>
+      <p class="settings-notice">كلمة سر Wi-Fi متضمنة في البيانات اللازمة لعمل رمز QR، وبالتالي أي شخص يقدر يطّلع على شفرة الموقع أو يمسح الرمز ممكن يعرفها.</p>
+    </form>
+    <p class="settings-footer">Trust Center · Mansoura</p>
+  </main>
+  <script src="app.js" defer></script>
+  <script src="settings.js" defer></script>
+</body>
+</html>
