@@ -1,0 +1,4 @@
+This website bundles qrcode-generator 1.4.4 (MIT License) as qrcode.js.
+Upstream project: https://github.com/kazuhikoarase/qrcode-generator
+Copyright (c) 2012 Kazuhiko Arase
+License: MIT. See the upstream project for the complete license text.
