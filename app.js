@@ -13,7 +13,7 @@
     eveningInstapay: '01099433936',
     eveningInstapayLink: '',
     wifiSSID: 'C.T',
-    wifiPassword: 'Trust#89',
+    wifiPassword: 'Trust@89',
     address: 'المنصورة، شارع الغزالي، أمام مستشفى الجامعة الرئيسي',
     mapQuery: 'المنصورة شارع الغزالي أمام مستشفى الجامعة الرئيسي'
   });
