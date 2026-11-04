@@ -8,7 +8,7 @@
     facebookUrl: 'https://www.facebook.com/trustcentermansoura?rdid=lbHoqqUXk5zdMgPv&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1ZBpG7rTEk%2F#',
     morningCash: '01030436906',
     morningInstapay: '01030436906',
-    morningInstapayLink: '',
+    morningInstapayLink: 'https://ipn.eg/S/ahmedmosbah28289/instapay/0xe0kB',
     eveningCash: '01099433936',
     eveningInstapay: '01099433936',
     eveningInstapayLink: '',
